@@ -11,7 +11,9 @@ Initialized web app project
 * webpack
 * css-loader
 * babel
+* babel-polyfill
 * react
 * reactstrap
 * react-router
 * axios
+* redux

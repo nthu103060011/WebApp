@@ -8,11 +8,12 @@ module.exports = {
     context: srcPath,
     resolve: {
         alias: {
-            components: path.resolve(srcPath, 'components')
+            components: path.resolve(srcPath, 'components'),
+            states: path.resolve(srcPath, 'states')
         }
     },
     entry: {
-        main: './index.js',
+        main: ['babel-polyfill', './index.jsx'],
         vendor: ['react', 'react-dom']
     },
     output: {
@@ -31,6 +32,9 @@ module.exports = {
                         presets: [
                             [ 'env', { modules: false } ],
                             'react'
+                        ],
+                        plugins: [
+                            'transform-object-rest-spread'
                         ]
                     }
                 }

@@ -1,7 +1,8 @@
 import React from 'react';
 import { Button } from 'reactstrap';
+import {connect} from 'react-redux';
 
-export default class Main extends React.Component {
+class Main extends React.Component {
     constructor(props) {
         super(props);
     }
@@ -15,3 +16,7 @@ export default class Main extends React.Component {
         );
     }
 }
+
+export default connect(state => ({ // import states to props
+
+}))(Main);
