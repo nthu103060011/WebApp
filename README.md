@@ -14,6 +14,6 @@ Initialized web app project
 * babel-polyfill
 * react
 * reactstrap
-* react-router
+* react-router-dom
 * axios
 * redux
